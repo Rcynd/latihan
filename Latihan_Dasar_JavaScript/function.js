@@ -35,5 +35,36 @@ function jumlahVolumeDuaKubus(a, b) {
 
     return total = volumeA + volumeB;
 }
+// Setelah di refactorkan function di atas
+
+// function jumlahVolumeDuaKubus(a, b) {
+
+//     return a*a*a + b*b*b;
+// }
 
 console.log(jumlahVolumeDuaKubus(2,3));
+console.log('==================================');
+
+function tambah(a,b){
+    return a + b;
+}
+
+function kali(a,b) {
+    return a * b;
+}
+
+var hasil = kali(tambah(1,2), tambah(3,4));
+
+console.log(hasil);
+console.log('========================');
+
+function plus() {
+    var hasil = 0;
+    for (let i = 0; i < arguments.length; i++) {
+        hasil += arguments[i];
+        
+    }
+    return hasil;
+}
+var coba = plus(1,2,3,4,5,6);
+console.log(coba);
